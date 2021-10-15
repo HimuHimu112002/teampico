@@ -143,7 +143,7 @@
     z-index: 10;
   }
   .header_part {
-    background-image: url("/exam/img/banner.png");
+    background-image: url("img/banner.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -384,7 +384,7 @@
     color: white;
   }
   .main_conunt{
-    background-image: url("/exam/img/Counter\ Section.png");
+    background-image: url("img/Counter.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
