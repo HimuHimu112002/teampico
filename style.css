@@ -149,7 +149,7 @@
     background-size: cover;
     min-height: 100vh;
   }
-  
+
   .navbar-nav .nav-item .nav-link {
     margin-right: 15px;
     font-size: 16px;
@@ -215,11 +215,11 @@
   .slide{
     text-align: center;
   }
-  .span_div{
+  /* .span_div{
     width: 20px;
     height: 40px;
     margin-left: 250px;
-  }
+  } */
   .card_content span{
     width: 3px;
     height: 30px;
@@ -236,10 +236,10 @@
   }
   @keyframes animate{
     0%{
-      height: 10px;
+      transform: scale(0);
     }
     100%{
-      height: 25px;
+      transform: scale(1.4);
     }
   
   }
@@ -263,6 +263,7 @@
    padding: 20px 0px;
    text-align: left;
    font-size: 16px;
+   cursor: pointer;
   }
   .main_card span{
     position: absolute;
@@ -271,9 +272,11 @@
     height: 4px;
     background-color: #EB3A4C;
     display: inline-block;
+    transition: .4s all ease-in-out;
+    border-radius: 50px;
   }
-  .main_card span:hover{
-    width: 40px;
+  .main_card:hover span{
+    transform: scale(1.5);
   }
   
   .mix span{
@@ -281,6 +284,17 @@
     height: 30px;
     background-color: #EB3A4C;
     display: inline-block;
+    animation: animate 1s infinite;
+    animation-direction: alternate;
+  
+  }
+  @keyframes animate{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1.4);
+    }
   
   }
   .mix_btn{
@@ -316,13 +330,12 @@
   .UiDesign{
     margin-right: 10px;
   }
-  .WebDesign, .UiDesign, .MarketingMaterials{
+  .mix_img{
     position: relative;
     cursor: pointer;
-    overflow: hidden;
   }
   
-  .WebDesign::before, .UiDesign::before, .MarketingMaterials::before{
+  .mix_img::before{
     content: '';
     position: absolute;
     background-color: #EB3A4C;
@@ -333,7 +346,7 @@
     opacity: 0;
     transition: .5s all ease-in-out;
   }
-  .WebDesign:hover::before, .UiDesign:hover::before, .MarketingMaterials:hover::before{
+  .mix_img:hover::before{
     width: 100%;
     height: 100%;
     opacity: .4;
@@ -361,6 +374,17 @@
     height: 30px;
     background-color: #EB3A4C;
     display: inline-block;
+    animation: animate 1s infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animate{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1.4);
+    }
+  
   }
   .about_content h1{
     margin-top: 50px;
@@ -392,6 +416,7 @@
   .subscribe{
     background-color: #FAFAFA;
     cursor: pointer;
+    padding: 100px 0px;
   }
   .subcribe_content h1{
     font-size: 28px;
@@ -441,3 +466,303 @@
     color: white;
    
   }
+
+  .slide2_content span{
+    width: 3px;
+    height: 30px;
+    background-color: #EB3A4C;
+    display: inline-block;
+    animation: animate 1s infinite;
+    animation-direction: alternate;
+  }
+  @keyframes animate{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1.4);
+    }
+  
+  }
+  .single-test{
+    background-color: #FAFAFA;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  .single-test i{
+    font-size: 50px;
+    text-align: left;
+    color: #EB3A4C;
+
+
+  }
+.client_img{
+  width: 50px;
+  margin-right: 15px;
+}
+
+/* pricing */
+.alls span{
+  width: 3px;
+  height: 30px;
+  background-color: #EB3A4C;
+  display: inline-block;
+  animation: animate 1s infinite;
+  animation-direction: alternate;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1.4);
+  }
+
+}
+.pricing .card {
+  border: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.pricing i{
+  font-size: 55px;
+  padding: 25px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: #C0C0C0;
+  animation: animate1 3s infinite;
+  animation-direction: alternate;
+}
+@keyframes animate1{
+  0%{
+    transform: translateX(10px);
+  }
+  50%{
+    transform: translateX(-10px);
+  }
+
+}
+.card-body{
+  position: relative;
+}
+.card-body span::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 60px;
+  left: 117px;
+  top: 75px;
+  background-color: #EB3A4C;
+  border-radius: 50px;
+  display: inline-block;
+  border-radius: 40px;
+}
+.card-body:hover .card-body span::before{
+  background-color: #EB3A4C;
+}
+.pricing .card-title {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 20px;
+}
+.pricing .card-price {
+  padding-top: 12px;
+  font-size: 1.3rem;
+  margin: 0;
+  font-family: 'MetropolisRegular';
+  font-weight: 800;
+  margin-top: 20px;
+}
+.pricing ul{
+  margin-left: 0;
+  margin-bottom: 3rem;
+}
+.pricing ul li {
+  margin-bottom: .55rem;
+  transition: .3s all ease-in-out;
+}
+.pricing ul li:hover{
+ color: #EB3A4C;
+}
+.pricing .btn {
+  transition: all 0.4s;
+}
+.card-body{
+  position: relative;
+  transition: .4s all ease-in-out;
+}
+.span-price::after{
+content: '';
+position: absolute;
+height: 5px;
+width: 91px;
+left: 50%;
+transform: translateX(-50%);
+top: 0px;
+background-color: #fff;
+border-radius: 50px;
+transition: all 0.2s;
+}
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    transform: scale(1.03);
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+    color: #fff;
+    background-color: #EB3A4C;
+    border-color: #EB3A4C;
+  }
+  .pricing .card:hover .span-price::after{
+    background-color: rgb(235, 58, 76);
+  }
+  
+}
+.price{
+  border-radius: 50px !important;
+}
+
+/* pricing */
+.sec-heading span{
+  width: 3px;
+  height: 40px;
+  background-color: #EB3A4C;
+  display: inline-block;
+  animation: animate 1s infinite;
+  animation-direction: alternate;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1.4);
+  }
+
+}
+.blog-area .single-blog {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.blog-area .single-blog:hover .blog-img img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.blog-cont{
+  padding: 20px;
+}
+.blog-cont h3{
+  color: #2F2F2F;
+}
+.blog-cont a{
+  text-decoration: none;
+  color: #EB3A4C;
+}
+.blog-area .single-blog .blog-img {
+  overflow: hidden;
+}
+
+.blog-area .single-blog .blog-img img {
+  transition: .4s all ease-in-out;
+}
+
+footer{
+  background-color: #FAFAFA;
+  display: flex;
+}
+
+.footer-offer-0-p{
+  background-image: url("img/Group.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+ 
+}
+.footer-offer-p{
+  /* height: 100vh; */
+  padding: 0 5%;
+}
+.footer-offer-0-p{
+  position: relative;  
+}
+.footer-offer-0{
+  text-align: center;
+  position: absolute;
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+.footer-offer-0 h4{
+  
+margin-bottom: 40px;
+}
+.footer-offer-0 h5{
+
+padding-top: 40px;
+}
+.footer-offer-0 p{
+
+padding-top: 0px;
+
+padding: 7px 0;
+
+margin-bottom: 0px;
+}
+.footer-offer form input{ 
+  padding-left: 0;
+  background-color: z;
+  border-top: none; 
+  border-right: none; 
+  border-left: none; 
+   border-bottom: 1px solid #EB3A4C !important; 
+   background-color: #FAFAFA;
+   border-radius: 0px; 
+   font-family: 'MetropolisRegular';
+}
+.footer-offer  form textarea { 
+  padding-left: 0;
+  background-color: #FAFAFA;
+  border-top: none; 
+  border-right: none; 
+  border-left: none; 
+   border-bottom: 1px solid #EB3A4C; 
+   border-radius: 0px; 
+   font-family: 'MetropolisRegular';
+  }
+  .footer-offer form input:focus,.footer-offer textarea:focus{
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #EB3A4C !important;
+  }
+.footer-offer p{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  
+}
+.footer-offer-p{
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+form input[type="text"]:focus{
+  border: none;
+}
+form input[type="text"]:focus{
+  border-bottom: 1px solid #EB3A4C;
+}
