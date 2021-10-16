@@ -1,0 +1,32 @@
+@media(min-width:320px) and (max-width:575px){
+    .banner_content h1{
+        font-size: 40px;
+    }
+    .banner_content span {
+        font-size: 37px;
+    }
+    .banner_content p {
+        font-size: 12px;
+    }
+    .banner_btn{
+        margin-bottom: 10px;
+    }
+    .topbtn {
+        right: 5px; 
+    }
+    .card_content{
+        font-size: 12px;
+    }
+    .about p, .slide2_content p, .alls p, .sec-para{
+        font-size: 12px;
+    }
+    .about_content h1 {
+        font-size: 20px;
+    }
+    .talking h1{
+        font-size: 24px;
+    }
+    .footer_offer{
+        margin-top: 50px;
+    }
+}
