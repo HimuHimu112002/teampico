@@ -432,6 +432,7 @@
     transition: .3s all ease-in-out;
   
   }
+  /*  */
   .subscribe:hover .subcribe_content span::before{
     width: 80px;
   }
@@ -744,3 +745,19 @@ form input[type="text"]:focus{
 form input[type="text"]:focus{
   border-bottom: 1px solid #EB3A4C;
 }
+.center .main_card{
+  background-color: #EB3A4C;
+  transition: .3s all ease-in-out;
+  color: white;
+}
+.center .main_card h3{
+  color: white;
+}
+.center .main_card i{
+  color: white;
+}
+.center .main_card span{
+  background-color: white;
+}
+
+
