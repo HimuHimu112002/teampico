@@ -30,3 +30,13 @@
         margin-top: 50px;
     }
 }
+@media(min-width:320px) and (max-width:650px){
+    .owl-prev{
+        top: 95%;
+        left: 20%;
+    }
+    .owl-next{
+        top: 95%;
+        left: 5%;
+    }
+}

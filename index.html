@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <!-- Bootstrap CSS -->
@@ -587,11 +588,13 @@
                   <p class="tc-2f fs-18 ffm f-400">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
               </div>
           </div>
-          <div class="row">
-              <div class="col-10 col-md-6 col-lg-4 m-auto mb-3">
+            <div class="row pop">
+                <div class="col-10 col-md-6 col-lg-4 m-auto mb-3">
                   <div class="single-blog border">
                       <div class="blog-img">
-                          <img src="img/post1.png" class="img-fluid" alt="">
+                          <a href="img/post1.png" class="image">
+                            <img src="img/post1.png" class="img-fluid" alt="">
+                          </a>
                       </div>
                       <div class="blog-cont px-30 pt-35 pb-30">
                           <h3>Top 10 Best Features</h3>
@@ -599,11 +602,14 @@
                           <a href="#">Read More</a>
                       </div>
                   </div>
-              </div>
-              <div class="col-10 col-md-6 col-lg-4 m-auto mb-3">
+                </div>
+
+                <div class="col-10 col-md-6 col-lg-4 m-auto mb-3">
                   <div class="single-blog border">
                       <div class="blog-img">
-                          <img src="img/post2.png" class="img-fluid" alt="">
+                          <a href="img/post2.png"  class="image">
+                            <img src="img/post2.png" class="img-fluid" alt="">
+                          </a>
                       </div>
                       <div class="blog-cont px-30 pt-35 pb-30">
                           <h3>Top 10 Best Services</h3>
@@ -611,11 +617,13 @@
                           <a href="#"">Read More</a>
                       </div>
                   </div>
-              </div>
-              <div class="col-10 col-md-6 col-lg-4 m-auto mb-3">
+                </div>
+                <div class="col-10 col-md-6 col-lg-4 m-auto mb-3">
                   <div class="single-blog border">
                       <div class="blog-img">
-                          <img src="img/post3.png" class="img-fluid" alt="">
+                          <a href="img/post3.png"  class="image">
+                            <img src="img/post3.png" class="img-fluid" alt="">
+                          </a>
                       </div>
                       <div class="blog-cont px-30 pt-35 pb-30">
                           <h3>Top 10 Best Products</h3>
@@ -623,8 +631,8 @@
                           <a href="#">Read More</a>
                       </div>
                   </div>
-              </div>
-          </div>
+                </div>
+            </div>
       </div>
   </section>
     
@@ -703,7 +711,18 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/jquery.preloadinator.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   </body>
+    <script>
+          $('.pop').magnificPopup({
+              type:'image',
+              delegate:'a',
+              gallery:{
+                  enabled:true
+              }
+            });
+
+    </script>
   <script>
     $('.js-preloader').preloadinator({
           minTime: 2000
@@ -747,15 +766,12 @@
           responsive:{
           0:{
             items:1,
-            nav:false,
           },
           576:{
             items:2,
-            nav:false,
           },
           768:{
             items:3,
-            nav:false,
            },
 
         }

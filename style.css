@@ -589,7 +589,7 @@
   position: relative;
   transition: .4s all ease-in-out;
 }
-.span-price::after{
+.span-price{
 content: '';
 position: absolute;
 height: 5px;
@@ -616,7 +616,7 @@ transition: all 0.2s;
     background-color: #EB3A4C;
     border-color: #EB3A4C;
   }
-  .pricing .card:hover .span-price::after{
+  .pricing .card:hover .span-price{
     background-color: rgb(235, 58, 76);
   }
   
@@ -759,5 +759,29 @@ form input[type="text"]:focus{
 .center .main_card span{
   background-color: white;
 }
-
-
+.owl-prev{
+  position: absolute;
+  top: 25%;
+  left: -8%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #C0C0C0 !important;
+}
+.owl-next{
+  position: absolute;
+  top: 40%;
+  left: -8%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #C0C0C0 !important;
+}
+.owl-prev span{
+  color: #EB3A4C;
+  font-size: 30px;
+}
+.owl-next span{
+  color: #EB3A4C;
+  font-size: 30px;
+}
